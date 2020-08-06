@@ -1,0 +1,12 @@
+def largest_two(target_list):
+    import copy
+    my_list = target_list
+    #my_list = []
+    for index in my_list:
+        max1 = max(my_list)
+        my_list2 = copy.copy(my_list)
+        remove_max = my_list2.remove(max(my_list2))
+        max2 = max(my_list2)
+        print('The largest and second largest elements in the list '+ str(my_list) + ' are ' + str(max1) + ' and ' + str(max2))
+        
+        break
